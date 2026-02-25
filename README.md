@@ -2,6 +2,8 @@
 
 This Python tool converts SoundFont 2 (SF2) files into SFZ format. It extracts sample and instrument data from an SF2 file, then creates a separate SFZ file for each preset along with dedicated sample folders. The exported regions include detailed information such as pitch key center, tuning, key and velocity ranges, volume envelopes, modulation envelopes, LFOs, filters, pan, attenuation, effects sends, exclusive classes, and loop settings.
 
+I made a web app version that parses everything locally on your computer through your web browser. So if you're feeling lazy and don't want to use Python, check it out here: [SF2 to SFZ Converter](https://bashexplode.com/sf2tosfz.html).
+
 I made this because I kept finding SF2 files that I wanted to use in Serum 2. You can copy the folder it outputs directly into your `Documents\Xfer\Serum 2 Presets\Multisamples\User` folder, and it should work.
 
 The script is fully standalone -- no third-party libraries needed, just Python 3. It parses the SF2 binary format directly and maps all SF2 generator parameters to their correct SFZ equivalents, aiming for 1:1 sound fidelity with the original soundfont.
